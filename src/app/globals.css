@@ -16,14 +16,18 @@
   }
 }
 
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+.bg-yellow-500 {
+  background-color: yellow !important;
+  color: #1b1b1b;
+}
+
+.bg-violet-500 {
+  background-color: blueviolet!important;
+}
+
+.bg-white-500 {
+  background-color: whitesmoke!important;
+  color: #1b1b1b!important;
 }
 
 @layer utilities {
