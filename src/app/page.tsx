@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <Head>
         <title>Color Game</title>
       </Head>
-      <main className="flex justify-center items-center h-screen">
+      <main className="flex justify-center w-screen h-screen">
         <Game />
       </main>
     </div>
