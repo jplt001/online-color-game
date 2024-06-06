@@ -190,6 +190,8 @@ const ColorGame = () => {
                             <input
                                 type="number"
                                 value={betAmount}
+                                max={tokens}
+                                min={0}
                                 onChange={(e) => setBetAmount(parseInt(e.target.value))}
                                 className="border border-gray-300 rounded px-3 py-2 mb-4 w-full"
                             />
