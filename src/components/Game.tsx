@@ -154,21 +154,21 @@ const ColorGame = () => {
     };
     return (
         <div className="flex flex-col items-center mt-10">
-            <div className="flex  text-xl mb-4">
-                <span className="mr-auto ml-4">Player: {playerName}</span>
+            <div className="flex  text-xl mb-4" style={{ position: 'absolute', top: '1rem', left: '1rem'}}>
+                <span className="mr-auto ml-4">Player: {playerName}</span><br/>
                 <span className="ml-auto mr-4">
                     <FontAwesomeIcon icon={faCoins} className="text-yellow-500 mr-2" />
                     {tokens}
                 </span>
             </div>
-            <div className="text-xl mb-4">Remaining Time: {remainingTime}</div>
-            <div className="flex mb-4 space-x-2">
+            <div className="text-xl mb-4" style={{ position: 'absolute', top: '1rem', right: '1rem'}}>Remaining Time: {remainingTime}</div>
+            <div className="flex mb-4 space-x-2 mt-10 border-l-sky-950 border-1">
                 {diceResult.map((color, index) => (
                     <div
                         key={index}
-                        className={`w-16 h-16 flex items-center justify-center text-white bg-${color}-500 animate-pulse rounded`}
+                        className={`w-20 h-20 flex items-center justify-center text-white bg-${color}-500 animate-pulse border-cyan-900`}
                     >
-                        {color}
+                        {String(color).toUpperCase()}
                     </div>
                 ))}
             </div>
